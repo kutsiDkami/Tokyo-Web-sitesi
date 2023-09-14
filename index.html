@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Tokyo-just anothher word press</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-2">
+          <img
+            class="logo-2"
+            src="https://marketifythemes.net/wp/tokyo/dark/wp-content/themes/tokyo/framework/img/dark-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="menu-bar">
+          <a href="javascript:void(0);" onclick="myFunction()">
+            <i class="bi bi-list menu-bar"></i
+          ></a>
+        </div>
+      </div>
+      <div class="side" id="myLinks">
+        <div class="topnav">
+          <ul id="myLinks">
+            <li class="menu-item2">
+              <a href=""><span>Home</span></a>
+            </li>
+            <li class="menu-item2">
+              <a href=""><span>About</span></a>
+            </li>
+            <li class="menu-item2">
+              <a href=""><span>Service</span></a>
+            </li>
+            <li class="menu-item2">
+              <a href=""><span>Portfolio</span></a>
+            </li>
+            <li class="menu-item2">
+              <a href=""><span>News</span></a>
+            </li>
+            <li class="menu-item2">
+              <a href=""><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="left-nav">
+        <div class="logo">
+          <img
+            class="desktop_logo"
+            src="https://marketifythemes.net/wp/tokyo/dark/wp-content/themes/tokyo/framework/img/dark-logo.png"
+            alt="logo"
+          />
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li class="menu-item">
+              <a href=""><span>Home</span></a>
+            </li>
+            <li class="menu-item">
+              <a href=""><span>About</span></a>
+            </li>
+            <li class="menu-item">
+              <a href=""><span>Service</span></a>
+            </li>
+            <li class="menu-item">
+              <a href=""><span>Portfolio</span></a>
+            </li>
+            <li class="menu-item">
+              <a href=""><span>News</span></a>
+            </li>
+            <li class="menu-item">
+              <a href=""><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form action="home.html" method="get">
+            <input
+              type="text"
+              placeholder="Search"
+              name="s"
+              autocomplete="off"
+              id="bi-Search"
+              class="screct"
+            />
+
+            <i class="bi bi-search i-screct"></i>
+          </form>
+        </div>
+        <div class="market">
+          <p>
+            © 2022 Tokyo<br />Created by
+            <a
+              href="https://themeforest.net/user/marketify"
+              target="_blank"
+              class="market2"
+              >Marketify</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="orta">
+          <div class="">
+            <img
+              src="https://marketifythemes.net/wp/tokyo/light/wp-content/uploads/2022/03/1.jpg"
+              class="photo"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h1 class="two-name">ADRIANO SMITH</h1>
+            <p>I am a WordPress Developer at heart and create</p>
+            <p>features that are best suited for the job at hand.</p>
+
+            <div class="social-icon">
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-pinterest"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script href="sidebar.js">
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      console.log("deneme");
+    </script>
+  </body>
+</html>
